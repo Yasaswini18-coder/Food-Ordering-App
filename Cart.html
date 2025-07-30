@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu Card</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<style>
+    body{
+    background-color: rgb(254,222,222);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+#menu-card {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px 40px;
+    width: 300px;
+    display:inline-block;
+
+
+    
+}
+
+#menu-content {
+    padding: 16px;
+}
+
+#menu-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    color: #494949;
+}
+#decr{
+    background-color: rgb(138, 228, 138);
+    border-radius: 20%;
+    border-color: aliceblue;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+#decr{
+    background-color: rgb(138, 228, 138);
+    border-radius: 20%;
+    border-color: aliceblue;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+#arit{
+    display: inline-block;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+</style>
+<script>
+$(document).ready(function() {
+    var clickCount = 0; 
+    $(".ic3p").click(function() {
+        clickCount++; 
+        $("#displayCount").text(clickCount); 
+    });
+    $(".ic3m").click(function() {
+        clickCount--; 
+        $("#displayCount").text(clickCount); 
+    });
+    var clickCount= 0; 
+    $("ic4p").click(function() {
+        clickCount++; 
+        $("#displayCount").text(clickCount); 
+    });
+    $("#ic4m").click(function() {
+        clickCount--; 
+        $("#displayCount").text(clickCount); 
+    });
+});
+</script>
+<body>
+    <div style="position:fixed;top:0;left:0;width:100%;background:#fff;padding:10px;z-index:999;display:flex;align-items:center;gap:10px;border-bottom:1px solid #ccc;"><img src="https://static.vecteezy.com/system/resources/thumbnails/007/414/786/small_2x/cute-cartoon-of-delivery-man-riding-motorcycle-hand-drawn-chibi-character-isolated-background-vector.jpg" alt="Delivery Man" style="height:40px;"><h1 style="margin:0;font-size:24px;">OnTheWay</h1></div>
+<br>
+<div id="menu-card">
+    <div id="menu-content">
+        <h2>Grilled Chicken</h2>
+        <div id="arit">
+            <i class="fas fa-solid fa-minus ic3m"  id="decr"></i>
+            <pre>  </pre>
+            <p id="displayCount">0</p>
+            <pre>  </pre>
+        <i class="fas fa-solid fa-plus ic3p" id="decr"></i>
+    </div>
+                <h3>Rs300</h3>
+        </div>
+        </div>
+        <br>
+        <div id="menu-card">
+            <div id="menu-content">
+                <h2>Grilled Chicken</h2>
+                <div id="arit">
+                    <i class="fas fa-solid fa-minus ic4m" id="decr"></i>
+                    <pre>  </pre>
+                    <p id="displayCount">0</p>
+                    <pre>  </pre>
+                <i class="fas fa-solid fa-plus ic4p" id="decr"></i>
+            </div>
+                        <h3>Rs300</h3>
+                </div>
+                </div>
+       
+            </body>
+            </html>

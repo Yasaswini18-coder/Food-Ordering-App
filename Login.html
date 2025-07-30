@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    width: 300px;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(255,71,92);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    background-color:rgb(255,71,92);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f47f7f;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color:rgb(0, 0, 0);
+
+}
+
+.signup-link a {
+    color:rgb(255,71,92);
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+#b2{
+    color:#ddd;
+    text-decoration: none;
+
+}
+
+</style>
+<body>
+    <div style="position:fixed;top:0;left:0;width:100%;background:#fff;padding:10px;z-index:999;display:flex;align-items:center;gap:10px;border-bottom:1px solid #ccc;"><img src="https://static.vecteezy.com/system/resources/thumbnails/007/414/786/small_2x/cute-cartoon-of-delivery-man-riding-motorcycle-hand-drawn-chibi-character-isolated-background-vector.jpg" alt="Delivery Man" style="height:40px;"><h1 style="margin:0;font-size:24px;">OnTheWay</h1></div>
+    <div class="login-container">
+        <form class="login-form">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+            <button type="submit"><a href="Home.html" id="b2">Login in</a></button>
+        </div>
+            <p class="signup-link"><b>Don't have an account? </b><a href="Index.html">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+</style>
+<body>
+    <div style="position:fixed;top:0;left:0;width:100%;background:#fff;padding:10px;z-index:999;display:flex;align-items:center;gap:10px;border-bottom:1px solid #ccc;"><img src="https://static.vecteezy.com/system/resources/thumbnails/007/414/786/small_2x/cute-cartoon-of-delivery-man-riding-motorcycle-hand-drawn-chibi-character-isolated-background-vector.jpg" alt="Delivery Man" style="height:40px;"><h1 style="margin:0;font-size:24px;">OnTheWay</h1></div>
+    <div style="height: 100px;"></div>
+    <div style="color:rgb(255, 71, 92);text-align: center;"><h1>BOOK NOW !!</h1></div>
+   <main>
+    <body>
+      <div class="gallery-container">
+          <div class="gallery-item" data-product="Product 1">
+              <a href="Cart.html">
+                  <img src="https://th.bing.com/th/id/OLC.btZVrFzg0GSd9A480x360?&rs=1&pid=ImgDetMain" alt="Product 1" class="gallery-image">
+                  <p class="product-name">The Klove</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 2">
+              <a href="Cart.html">
+                  <img src="https://i.ytimg.com/vi/sYIuBaV2gcM/maxresdefault.jpg" alt="Product 2" class="gallery-image">
+                  <p class="product-name">ICE</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 3">
+              <a href="Cart.html">
+                  <img src="https://th.bing.com/th/id/OLC.AXYojGiWrgfEkw480x360?&rs=1&pid=ImgDetMain" alt="Product 3" class="gallery-image">
+                  <p class="product-name">Dil E muglahai</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 4">
+              <a href="product4.html">
+                  <img src="https://odishabytes.com/wp-content/uploads/2021/03/cafe-sundowner-bhubaneswar.jpg" alt="Product 4" class="gallery-image">
+                  <p class="product-name">Cafe-sundowner-bhubaneswar</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 5">
+              <a href="product5.html">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/59/16/91/beautiful-interiors.jpg" alt="Product 5" class="gallery-image">
+                  <p class="product-name">Swosti Plaza</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 6">
+              <a href="product6.html">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/5c/60/42/mayfair-lagoon.jpg" alt="Product 6" class="gallery-image">
+                  <p class="product-name">mayfair-lagoon</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 7">
+              <a href="product7.html">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/49/de/b6/an-all-day-dining-restaurant.jpg" alt="Product 7" class="gallery-image">
+                  <p class="product-name">Flavours </p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 8">
+              <a href="product8.html">
+                  <img src="https://th.bing.com/th/id/OIP.vL_ohTkTDV3Y-iST0YrGHwHaF3?rs=1&pid=ImgDetMain" alt="Product 8" class="gallery-image">
+                  <p class="product-name">KFC</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 9">
+              <a href="product9.html">
+                  <img src="https://th.bing.com/th/id/OIP.8mtOZZDRS5MrA772noonvwHaD4?w=287&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 9" class="gallery-image">
+                  <p class="product-name">Domino's</p>
+              </a>
+          </div>
+          <div class="gallery-item" data-product="Product 10">
+              <a href="product10.html">
+                  <img src="https://th.bing.com/th/id/OIP.9loGXl3EXcZkJzSkbEPSZgHaDt?w=293&h=175&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 10" class="gallery-image">
+                  <p class="product-name">Pizza hut</p>
+              </a>
+          </div>
+   </main>
+
+  <div style="height: 1000px;"></div> 
+</body>
+</html>
